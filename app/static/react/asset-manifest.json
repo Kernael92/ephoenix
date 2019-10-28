@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/react/css/main.5bd74be8.chunk.css",
+    "main.js": "/static/react/js/main.a5d478a8.chunk.js",
+    "main.js.map": "/static/react/js/main.a5d478a8.chunk.js.map",
+    "runtime-main.js": "/static/react/js/runtime-main.11d3c82b.js",
+    "runtime-main.js.map": "/static/react/js/runtime-main.11d3c82b.js.map",
+    "css/2.510409cd.chunk.css": "/static/react/css/2.510409cd.chunk.css",
+    "js/2.c0380eea.chunk.js": "/static/react/js/2.c0380eea.chunk.js",
+    "js/2.c0380eea.chunk.js.map": "/static/react/js/2.c0380eea.chunk.js.map",
+    "../../templates/index.html": "/static/react/../../templates/index.html",
+    "css/2.510409cd.chunk.css.map": "/static/react/css/2.510409cd.chunk.css.map",
+    "css/main.5bd74be8.chunk.css.map": "/static/react/css/main.5bd74be8.chunk.css.map",
+    "media/logo.svg": "/static/react/media/logo.25bf045c.svg",
+    "media/nucleo-icons.css": "/static/react/media/nucleo.f0b489a5.woff",
+    "precache-manifest.d37111be24a2acf3f87eae268d521caf.js": "/static/react/precache-manifest.d37111be24a2acf3f87eae268d521caf.js",
+    "service-worker.js": "/static/react/service-worker.js"
+  }
+}
