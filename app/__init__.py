@@ -1,7 +1,11 @@
 import os
-from flask import Flask
+from flask import Flask,render_template
 from flask_pymongo import PyMongo
 from pymongo import MongoClient
+from app.config import *
+
+
+
 
 
 app = Flask(__name__, instance_relative_config=True)
@@ -12,10 +16,10 @@ app.config.from_mapping(
 app.config['MONGO_URI'] = "mongodb://mongodb:password@localhost:27017"
 
 # Load Configurations from config object which defaults to Development
-app.config.from_object(os.getenv('FLASK_ENVIRONMENT', 'config.Development'))
+# app.config.from_object(os.getenv('FLASK_ENVIRONMENT', 'config.Development'))
 # Create MongoDB connection object using Mongo URI and instatiate DB (ephoenix)
 mongo_conn = MongoClient(app.config['MONGO_URI'])
-mongo_db = mongo_conn[app.config['DB_NAME']]
+# mongo_db = mongo_conn[app.config['DB_NAME']]
 
 test_config = None
 
@@ -37,5 +41,13 @@ from .utils import db
 db.Base
 
 
-from .content import views
+from app.content import views
 app.register_blueprint(views.content, url_prefix="/content")
+
+@app.route('/')
+def hello():
+    return render_template('index.html', token="Hell FLASK + REACT")
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
