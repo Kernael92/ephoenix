@@ -16,7 +16,7 @@ content = Blueprint("content", __name__, template_folder='./templates/content', 
 
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
-target = os.path.join(APP_ROOT, './static/content/upload')
+target = os.path.join(APP_ROOT, 'upload/')
 
 # return the filename of the allowed file extensions without the dot before
 def allowed_video(filename):
@@ -36,7 +36,7 @@ def upload():
     """
     Uploads and saves the file
     """
-    target = os.path.join(APP_ROOT, 'static/')
+    target = os.path.join(APP_ROOT, 'upload/')
     if not os.path.isdir(target):
         os.mkdir(target)
 
@@ -89,6 +89,16 @@ def upload():
 @content.route('/uploaded_file/<filename>')
 def uploaded_file(filename):
     return send_from_directory(target, filename)
+
+@content.route('/uploads')
+def uploads():
+    phishing101_1  = phishing101.find()
+    
+    return render_template('content/image.html', phishing101=phishing101_1 )
+
+@content.route('/phish')
+def phish():
+    return render_template('content/phish.html')
 
 
 

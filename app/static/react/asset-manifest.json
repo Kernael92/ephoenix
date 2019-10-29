@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/react/css/main.5bd74be8.chunk.css",
-    "main.js": "/static/react/js/main.a5d478a8.chunk.js",
-    "main.js.map": "/static/react/js/main.a5d478a8.chunk.js.map",
+    "main.js": "/static/react/js/main.6f4eeb31.chunk.js",
+    "main.js.map": "/static/react/js/main.6f4eeb31.chunk.js.map",
     "runtime-main.js": "/static/react/js/runtime-main.11d3c82b.js",
     "runtime-main.js.map": "/static/react/js/runtime-main.11d3c82b.js.map",
     "css/2.510409cd.chunk.css": "/static/react/css/2.510409cd.chunk.css",
@@ -13,7 +13,7 @@
     "css/main.5bd74be8.chunk.css.map": "/static/react/css/main.5bd74be8.chunk.css.map",
     "media/logo.svg": "/static/react/media/logo.25bf045c.svg",
     "media/nucleo-icons.css": "/static/react/media/nucleo.f0b489a5.woff",
-    "precache-manifest.d37111be24a2acf3f87eae268d521caf.js": "/static/react/precache-manifest.d37111be24a2acf3f87eae268d521caf.js",
+    "precache-manifest.150258caa3e34102eb05b127cace9a2b.js": "/static/react/precache-manifest.150258caa3e34102eb05b127cace9a2b.js",
     "service-worker.js": "/static/react/service-worker.js"
   }
 }
