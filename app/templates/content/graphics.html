@@ -23,7 +23,7 @@
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
             <label for="form-check-label">
                 {% for file in phishing101  %}
-                <p><a href="{{url_for('content.uploaded_file', filename=file['video'])}}">{{file['video']}}</a></p>
+                <p><a href="{{url_for('content.uploaded_file', filename=file['infographic'])}}">{{file['infographic']}}</a></p>
                 {% endfor  %}
             </label>
             <button type="submit">Upload</button>
@@ -31,4 +31,3 @@
     </form>
 </div>
 {% endblock %}
-

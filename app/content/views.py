@@ -96,9 +96,25 @@ def uploads():
     
     return render_template('content/image.html', phishing101=phishing101_1 )
 
+@content.route('/phish_posters')
+def posters():
+    phishing101_1  = phishing101.find()
+    
+    return render_template('content/poster.html', phishing101=phishing101_1 )
+
+@content.route('/phish_graphics')
+def graphics():
+    phishing101_1  = phishing101.find()
+    
+    
+    
+    return render_template('content/graphics.html', phishing101=phishing101_1 )
+
 @content.route('/phish')
 def phish():
-    return render_template('content/phish.html')
+    phishing101_1  = phishing101.find()
+
+    return render_template('content/phish.html', phishing101=phishing101_1 )
 
 
 
