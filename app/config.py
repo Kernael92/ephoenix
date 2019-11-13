@@ -18,7 +18,7 @@ class Development(Config):
     DB_PASSWORD = os.getenv('DB_PASSWORD', 'password')
     DB_PORT = os.getenv('DB_PORT', 27017)
     DB_NAME = os.getenv('DB_NAME', 'ephoenix')
-    MONGO_URI = f'''mongodb://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}'''
+    MONGO_URI = "mongodb://{}:{}@{}:{}".format(DB_USER,DB_PASSWORD,DB_HOST,DB_PORT)
 
 
 class Production(Config):
@@ -28,7 +28,6 @@ class Production(Config):
     DB_PASSWORD = os.getenv('DB_PASSWORD', 'p@ssword')
     DB_PORT = os.getenv('DB_PORT', 27017)
     DB_NAME = os.getenv('DB_NAME', 'ephoenix')
-    MONGO_URI = f'''mongodb://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}'''
-
+    MONGO_URI = "mongodb://{}:{}@{}:{}".format(DB_USER,DB_PASSWORD,DB_HOST,DB_PORT)
 
 
